@@ -1,0 +1,107 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>CALCOLATRICE SEMPLICE</title>
+		<meta charset = "utf-8">
+		
+		<style>
+			
+			h1{
+				text-align : center;
+				color: red;
+				font-size : 3.5em;
+				font-family : impact;
+				border-style : solid; 
+				border-color : white;
+				border-width : 0.5;
+			}
+			
+			h2{
+				text-align : center;
+				font-size : 1.5em;
+				font-family : impact;
+			}
+			
+			h3{
+				font-size : 1.3em;
+				font-family : impact;
+			}
+			
+			</style>
+	
+	</head>
+	
+	<body>
+		
+		<h1>CALCOLATRICE</h1>
+		<h2>Ciascun numero è lungo al massimo 4 cifre.</h2>
+		
+		<br>
+		
+		<fieldset>
+		
+		<legend>INSERISCI IL PRIMO NUMERO:</legend>
+		<h2><p align = "center">PRIMO NUMERO:<input type="number" id="num1" value="" onclick="")></p><h2>
+		
+		</fieldset>
+		
+
+		<h3>OPERAZIONE:</h3>
+			<select  id = "op">
+				<option value = "0">+</option>
+				<option value = "1">-</option>
+				<option value = "2">*</option>
+				<option value = "3">/</option>
+			</select>
+			
+		<br>
+		<br>
+		<br>
+			
+	
+		<fieldset>
+		
+		<legend>INSERISCI IL SECONDO NUMERO:</legend>
+		<h2><p align = "center">SECONDO NUMERO:<input type="number" id="num2" value="" onclick="")></p><h2>
+		
+		</fieldset>
+		
+		<br>
+		<br>
+		
+		<fieldset>
+			
+			<legend>RISULTATO DELL'OPERAZIONE:</legend>
+			<button class="pulsante1" onclick="calcola()">CALCOLA IL RISULTATO</button>
+		
+		</fieldset>
+		
+		
+		<script type="text/javascript">
+
+			function calcola(){
+				var n = document.getElementById("num1").value;
+				var n1 = document.getElementById("num2").value;
+				var n2 = document.getElementById("op").value;
+				
+				var ris = (n*1)+(n1*1);
+				var ris1 = n-n1;
+				var ris2 = n*n1;
+				var ris3 = n/n1;
+				
+				
+				if (document.getElementById("op").value == "0"){
+					alert("la somma tra i due numeri risulta:"+ris);
+				}if(document.getElementById("op").value == "1"){
+					alert("la sottrazione tra i due numeri risulta:"+ris1);
+				}if(document.getElementById("op").value == "2"){
+					alert("la moltiplicazione tra i due numeri risulta:"+ris2);
+				}if(document.getElementById("op").value == "3"){
+					alert("la divisione tra i due numeri risulta:"+ris3);
+				}
+			}
+	
+		</script>
+		
+	</body>
+</html>
