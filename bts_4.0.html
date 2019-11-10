@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm bg-primary navbar-dark"><ul class="navbar-nav">
+    <li class="nav-item active">
+      <a class="nav-link">FraBook</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="https://www.facebook.com/help/1017657581651994">Informazioni</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="https://www.facebook.com/help/239070709801747?helpref=hc_global_nav">Gestione account</a>
+    </li>
+  
+  </ul>
+  </nav>
+  <br>
+  <br>
+  
+  
+  <P><strong>Registrati:</strong>
+<form action="/action_page.php" class="needs-validation" novalidate>
+  <div class="form-group">
+    <label for="uname">Username:</label>
+    <input type="text" class="form-control" id="uname" placeholder="Enter username" name="uname" required>
+    <div class="valid-feedback">Valid.</div>
+    <div class="invalid-feedback">Please fill out this field.</div>
+  </div>
+  <div class="form-group">
+    <label for="pwd">Password:</label>
+    <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
+    <div class="valid-feedback">Valid.</div>
+    <div class="invalid-feedback">Please fill out this field.</div>
+  </div>
+  <div class="dropdown">
+  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+    Età attuale
+	
+  </button>
+  <br>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="#">18</a>
+    <a class="dropdown-item" href="#">19</a>
+    <a class="dropdown-item" href="#">20</a>
+	<a class="dropdown-item" href="#">21</a>
+    <a class="dropdown-item" href="#">22</a>
+    <a class="dropdown-item" href="#">23</a>
+  </div>
+  <br>
+</div>
+  <div class="form-group form-check">
+    <label class="form-check-label">
+      <input class="form-check-input" type="checkbox" name="remember" required> Ricordati di me
+      <div class="valid-feedback">Valid.</div>
+      <div class="invalid-feedback">Check this checkbox to continue.</div>
+    </label>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+<script>
+
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+ 
+    var forms = document.getElementsByClassName('needs-validation');
+
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+</script>
+<br>
+
+<div class="alert alert-primary">
+	<center><strong>Attenzione devi avere almeno 18 anni per registrati</strong></center>
+  </div>
+ 
+ <div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <h3>Perchè scegliere FraBook?</h3>
+      <p>FraBook è il più diffuso Social Network del mondo.<br>
+		È un servizio web gratuito che ti permette di metterti in contatto con i tuoi amici vicini e lontani e aprire nuove relazioni.<br>
+		Con oltre 1 miliardo di iscritti, su FraBook, puoi facilmente trovare vecchi compagni di scuola o conoscenti di "vecchia data" oppure semplicemente fare nuove amicizie.<br>
+		Puoi condividere notizie interessanti trovate sul web e aprire discussioni.<br>
+		Puoi caricare foto e video, da far vedere solamente ai tuoi amici (o se desideri a tutta la comunità).<br>
+		Puoi vedere quando i tuoi amici sono collegati online a FraBook e chiedergli di chattare insieme.<br>
+		Puoi vedere i nomi degli amici dei tuoi amici e avviare un contatto anche con loro.<br>
+		Puoi creare, iscriverti a gruppi e accedere alle pagine di alcuni personaggi famosi scambiando qualche battuta.<br>
+
+		</p>
+    </div>
+    <div class="col-sm-4">
+      <img src="http://www.thetrainingacademy.co.za/img/accredImg.png" class="img-fluid">
+    </div>
+	 <div class="col-sm-4">
+	<h3>Come guadagnare con FraBook?</h3>
+      <p>Solitamente, chi riesce davvero a guadagnare con FraBook, o ha una pagina con un altissimo numero di utenti attivi che interagiscono con la pagina, o acquista pubblicità su FraBook per portare gli utenti su landing page create per generare lead e vendite.
+		Un tempo era più semplice guadagnare con FraBook e le pagine di contenuti virali, ma dopo una serie di aggiornamenti all’algoritmo di FraBook e dopo alcuni ban di Pagine FraBook, la situazione è cambiata.
+		Proprio per questo motivo diversi “Paginisti” hanno scelto di spostarsi sull’Affiliate Marketing o sul Dropshipping.
+		Se vuoi guadagnare qualcosina puoi utilizzare una serie di servizi che ti permetteranno di ottenere delle commissioni dalla vendita di prodotti o servizi online: la tua pagina FraBook può diventare una “vetrina” dove promuovere prodotti e servizi.
+		Chi è agli inizi sceglie ad esempio di pubblicare link di Amazon per ricevere una commissione in affiliazione (per approfondire puoi leggere l’articolo dedicato all’Affiliazione Amazon), fare pubblicità per portare utenti su Amazon invece è rischioso e potrebbe portarti a perdere dei soldi
+
+		</p>
+		  </div>
+    </div>
+  </div>
+</div>
+ 
+</body>
+</html>
